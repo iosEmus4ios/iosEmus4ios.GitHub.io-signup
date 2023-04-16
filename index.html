@@ -1,0 +1,90 @@
+
+<h1 style="text-align:center">  sign up  </h1>
+
+<center>
+
+<form name="form1" id="form1">
+
+<br>
+<input type="text" id="username" name="username" required placeholder="username"/>
+<br>
+
+<br>
+<input type="password"  id = "confirmpass"
+
+name="password" minlength="8" required 
+  placeholder=" password"
+ 
+
+/>
+<br>
+<br>
+
+<br>
+<input type="password" id="pass" name="password" minlength="8" required  
+
+placeholder="confirm password"
+ /> </form>
+<br>
+<br>
+<input type="submit" onclick="passwordConfirmation()" value="signup" />
+
+<a href="http://google.com">
+<button class="btn"> cancel</button>
+</a>
+<br>
+<hr>
+<script>
+function passwordConfirmation() {
+            var password = document.getElementById("pass").value;
+            var confirmPassword = document.getElementById("confirmpass").value;
+            
+            if (password == "") {
+                alert("Error: The password field is Empty.");
+            } else if (password == confirmPassword) {
+                alert("yes");
+            } else {
+                alert("Please make sure your passwords match.")
+            }
+}
+   
+      
+      </script>
+
+<style>
+body{font-family:sans-serif;
+background-color: black;
+color: white;}
+input{outline:none;
+      border: 1px solid #FBFBFB;
+background-color: #FBFBFB;
+color: black;
+padding: 14px 16px;
+border-radius: 30px;
+width: 95%;
+height: 5%;
+margin: 20px;
+text-align: center;
+font-size: 30px;
+} 
+
+input[type=submit]
+{background-color:green;
+color: white;
+width:30%;
+height: 4%;
+border: none;
+font-size: 25px;
+margin: 20px;
+}
+
+.btn{
+background-color:red;
+color: white;
+width:30%;
+height: 4%;
+border: none;
+font-size: 30px;
+font-family: sans-serif;
+}
+</style>
